@@ -1,14 +1,16 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const item = require("./item");
 
-const categorySchema = new Schema(
+const Schema = require("mongoose").Schema;
+
+const itemSchema = new Schema(
   {
     name: { type: String, required: true },
-    sortOrder: Number,
+    category: { type: Schema.Types.ObjectId, ref: "Category" },
+    price: { type: Number, required: true, default: 0 },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("Category", categorySchema);
+module.exports = itemSchema;
