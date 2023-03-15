@@ -12,7 +12,7 @@ export default function ParlorMenu() {
         <p>Ice cream name goes here</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          harum iure.
+          harum fiure.
         </p>
         <div class="btnAndPrice">
           <button className="addToOrder">ADD TO ORDER</button>
