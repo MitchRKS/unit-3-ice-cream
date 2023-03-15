@@ -2,9 +2,9 @@ import React from "react";
 
 export default function AuthPage() {
   return (
-    <div>
+    <div className="authSection">
       <h1>Login / Sign Up</h1>
-      <div className="authSection">
+      <div class="unameInp">
         <label for="username">Username:</label>
         <input
           type="text"
@@ -13,7 +13,7 @@ export default function AuthPage() {
           placeholder="username"
         ></input>
       </div>
-      <div class="pwdSection">
+      <div class="pwdInp">
         <label for="password">Password:</label>
         <input
           type="password"

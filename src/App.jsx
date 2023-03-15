@@ -7,7 +7,7 @@ import ParlorOrder from "./Pages/ParlorOrder";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({});
 
   return (
     <main className="App">
