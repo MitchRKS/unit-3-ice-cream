@@ -7,10 +7,19 @@ import React from "react";
 export default function ParlorMenu() {
   return (
     <div className="eachItem">
+      <h2>Signature Ice Creams</h2>
       <div className="menuToOrder">
         <p>Ice cream name goes here</p>
-        <p>Ice Cream description goes here</p>
-        <p class="priceDisp">$12.75</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          harum iure.
+        </p>
+        <div class="btnAndPrice">
+          <button className="addToOrder">ADD TO ORDER</button>
+          <button className="editItem">EDIT</button>
+          <button className="delItem">DELETE</button>
+          <p className="priceDisp">$12.75</p>
+        </div>
         <fieldset>
           <legend>Choose a size</legend>
           <div>
@@ -22,7 +31,13 @@ export default function ParlorMenu() {
             <label for="loveIt">Love it</label>
           </div>
           <div>
-            <input type="checkbox" id="haveItAll" name="size" value="size" />
+            <input
+              type="checkbox"
+              id="haveItAll"
+              name="size"
+              value="size"
+              checked
+            />
             <label for="haveItAll">Have it all</label>
           </div>
         </fieldset>
@@ -39,6 +54,7 @@ export default function ParlorMenu() {
               id="chocoChips"
               name="toppings"
               value="toppings"
+              checked
             />
             <label for="chocoChips">Choco chips</label>
           </div>
@@ -48,6 +64,7 @@ export default function ParlorMenu() {
               id="caramel"
               name="toppings"
               value="toppings"
+              checked
             />
             <label for="caramel">Caramel</label>
           </div>
@@ -57,6 +74,7 @@ export default function ParlorMenu() {
               id="MandMs"
               name="toppings"
               value="toppings"
+              checked
             />
             <label for="MandMs">M & M</label>
           </div>
@@ -66,6 +84,7 @@ export default function ParlorMenu() {
               id="Sprinkle"
               name="toppings"
               value="toppings"
+              checked
             />
             <label for="Sprinkle">Sprinkle`</label>
           </div>
@@ -75,6 +94,7 @@ export default function ParlorMenu() {
               id="peanuts"
               name="toppings"
               value="toppings"
+              checked
             />
             <label for="peanuts">Peanuts</label>
           </div>
