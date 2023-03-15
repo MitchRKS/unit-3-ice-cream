@@ -2,7 +2,11 @@ h1 {
   color: blue;
 }
 
-
+.authSection {
+  background-color: orange;
+  width: 500px;
+  height: 500px;
+}
 /* .App {
   text-align: center;
 }
