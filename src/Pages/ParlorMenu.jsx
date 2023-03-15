@@ -16,7 +16,6 @@ export default function ParlorMenu() {
           peanuts, jelly, tooty fruity
         </p>
       </div>
-      >
     </div>
   );
 }
