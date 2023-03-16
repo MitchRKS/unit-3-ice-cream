@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import { getUser } from "../src/utilities/users-service";
 
 function App() {
-  const [user, setUser] = useState(getUser());
+  const [user, setUser] = useState({});
 
   return (
     <main className="App">
