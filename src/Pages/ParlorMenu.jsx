@@ -9,7 +9,7 @@ export default function ParlorMenu() {
     <div className="eachItem">
       <h2>Signature Ice Creams</h2>
       <div className="menuToOrder">
-        <p>Ice cream name goes here</p>
+        <p>Coffee Lovers Only</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
           harum fiure.
@@ -71,12 +71,12 @@ export default function ParlorMenu() {
           <div>
             <input
               type="checkbox"
-              id="MandMs"
+              id="heathBar"
               name="toppings"
               value="toppings"
               checked
             />
-            <label for="MandMs">M & M</label>
+            <label for="heathBar">Heath bar</label>
           </div>
           <div>
             <input

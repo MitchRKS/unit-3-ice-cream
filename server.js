@@ -7,6 +7,9 @@ const logger = require("morgan");
 
 const app = express();
 
+// RUN THE DATABASE CONNECTION
+require("./config/database");
+
 app.use(logger("dev"));
 app.use(express.json());
 

@@ -24,6 +24,7 @@ export default function AuthPage() {
       </div>
       <div>
         <button>Submit</button>
+        <button>Sign me up!</button>
       </div>
     </div>
   );
