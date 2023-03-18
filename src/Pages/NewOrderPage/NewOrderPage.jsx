@@ -4,7 +4,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import * as itemsAPI from "../../utilities/items-api";
-import * as ordersAPI from "../../utilities/";
+import * as ordersAPI from "../../utilities/order-api";
 import React from "react";
 
 export default function ParlorMenu() {
