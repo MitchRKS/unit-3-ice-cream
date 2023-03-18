@@ -14,7 +14,7 @@ function App() {
     <main className="App">
       {user ? (
         <>
-          <NavBar />
+          <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* IF THE USER IS AUTHENTICATED SHOW THE MENU PAGE FOR THE USER TO
           INTIATE THE ORDER  */}
