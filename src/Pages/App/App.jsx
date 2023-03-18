@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+
+import "./App.module.scss";
+
 import AuthPage from "../AuthPage/AuthPage";
 import ParlorMenu from "../ParlorMenu/ParlorMenu";
 import ParlorOrder from "../ParlorOrder/ParlorOrder";
+
 import NavBar from "../../components/NavBar";
 import { getUser } from "../../utilities/users-service";
 
