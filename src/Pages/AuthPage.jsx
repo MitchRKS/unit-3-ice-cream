@@ -1,30 +1,16 @@
-import React from "react";
+import React, { useState } from 'react';
+import LoginForm from '../components/LoginForm/LoginForm';
+import SignUpForm from '../components/SignUpForm/SignUpForm';
 
-export default function AuthPage() {
+export default function AuthPage({ setUser }) {
+  const [showLogin, setShowLogin] = useState(true);
+
   return (
-    <div className="authSection">
-      <h1>Login / Sign Up</h1>
-      <div class="unameInp">
-        <label for="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          value=""
-          placeholder="username"
-        ></input>
-      </div>
-      <div class="pwdInp">
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value=""
-          placeholder="password"
-        ></input>
-      </div>
+    <main>
       <div>
-        <button>Submit</button>
+        <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>
       </div>
-    </div>
+      {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
+    </main>
   );
 }
