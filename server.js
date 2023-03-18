@@ -1,5 +1,7 @@
 require("dotenv").config();
-require("./config/database");
+// require("./config/database");
+
+// require("./backend/config/database");
 const express = require("express");
 const path = require("path");
 const favicon = require("serve-favicon");
@@ -8,7 +10,9 @@ const logger = require("morgan");
 const app = express();
 
 // RUN THE DATABASE CONNECTION
-require("./config/database");
+require("./backend/config/database");
+
+// require("./config/database");
 
 app.use(logger("dev"));
 app.use(express.json());
