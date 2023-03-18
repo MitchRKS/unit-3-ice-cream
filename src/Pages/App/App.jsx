@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.module.scss";
-
 import AuthPage from "../AuthPage/AuthPage";
-import ParlorMenu from "../ParlorMenu/ParlorMenu";
-import ParlorOrder from "../ParlorOrder/ParlorOrder";
-
+import NewOrderPage from "../NewOrderPage/NewOrderPage";
+import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
 import NavBar from "../../components/NavBar";
 import { getUser } from "../../utilities/users-service";
 
@@ -23,13 +21,13 @@ function App() {
           INTIATE THE ORDER  */}
             <Route
               path="/orders/new"
-              element={<ParlorMenu user={user} setUser={setUser} />}
+              element={<NewOrderPage user={user} setUser={setUser} />}
             />
             {/* THIS PAGE WILL SHOW THE ORDER DETAILS OF THE CURRENT ORDER
           (SHOPPING CART) */}
             <Route
               path="/orders"
-              element={<ParlorOrder user={user} setUser={setUser} />}
+              element={<OrderHistoryPage user={user} setUser={setUser} />}
             />
           </Routes>
         </>
