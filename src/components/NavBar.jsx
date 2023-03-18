@@ -4,6 +4,8 @@ import UserLogOut from "../components/UserLogOut/UserLogOut";
 
 export default function NavBar({ user, setUser }) {
   return (
+    <>
+    <h1> ICE CREAM PARLOR </h1>
     <nav>
       <Link to="/orders/new">Signature Ice Creams</Link>
       &nbsp; | &nbsp;
@@ -11,5 +13,6 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <UserLogOut user={user} setUser={setUser} />
     </nav>
+    </>
   );
 }
