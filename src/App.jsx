@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import AuthPage from "./Pages/AuthPage";
-import ParlorMenu from "./Pages/ParlorMenu";
-import ParlorOrder from "./Pages/ParlorOrder";
+import ParlorMenu from "./Pages/ParlorMenu/ParlorMenu";
+import ParlorOrder from "./Pages/ParlorOrder/ParlorOrder";
 import NavBar from "./components/NavBar";
 import { getUser } from "../src/utilities/users-service";
 
