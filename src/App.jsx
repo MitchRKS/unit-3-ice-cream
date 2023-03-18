@@ -18,10 +18,16 @@ function App() {
           <Routes>
             {/* IF THE USER IS AUTHENTICATED SHOW THE MENU PAGE FOR THE USER TO
           INTIATE THE ORDER  */}
-            <Route path="/orders/new" element={<ParlorMenu user={user} setUser={setUser} />} />
+            <Route
+              path="/orders/new"
+              element={<ParlorMenu user={user} setUser={setUser} />}
+            />
             {/* THIS PAGE WILL SHOW THE ORDER DETAILS OF THE CURRENT ORDER
           (SHOPPING CART) */}
-            <Route path="/orders" element={<ParlorOrder user={user} setUser={setUser} />} />
+            <Route
+              path="/orders"
+              element={<ParlorOrder user={user} setUser={setUser} />}
+            />
           </Routes>
         </>
       ) : (
