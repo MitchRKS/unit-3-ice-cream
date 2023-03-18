@@ -1,6 +1,10 @@
 import React from "react";
+import SignUpForm from "../../components/SignUpForm/SignUpForm";
+import LoginForm from "../../components/LoginForm/LoginForm";
+import Styles from "./Authpage.module.scss";
 
 export default function AuthPage() {
+  const [showLogin, setShowLogin] = useState(true);
   return (
     <div className="authSection">
       <h1>Login / Sign Up</h1>
