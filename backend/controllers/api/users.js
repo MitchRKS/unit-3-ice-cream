@@ -21,7 +21,7 @@ const dataController = {
       res.locals.data.token = token
       next()
     } catch (e) {
-      console.log('you got a database problem')
+      console.log('You got a database problem')
       console.log(e)
       res.status(400).json(e)
     }
