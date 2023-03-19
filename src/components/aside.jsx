@@ -5,7 +5,7 @@ import UserLogOut from "./UserLogOut/UserLogOut";
 export default function Aside({ children, user, setUser, styles }) {
   return (
     <aside className={styles}>
-      <Logo />
+      {/* <Logo /> */}
       {children}
       <UserLogOut user={user} setUser={setUser} />
     </aside>

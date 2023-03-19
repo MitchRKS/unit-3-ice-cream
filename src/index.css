@@ -22,9 +22,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://i.imgur.com/xcL76XO.png");
+  /* background-image: url("https://i.imgur.com/xcL76XO.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
 }
 
 code {
