@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import "./App.module.scss";
+import styles from "./App.module.scss";
 import AuthPage from "../AuthPage/AuthPage";
 import NewOrderPage from "../NewOrderPage/NewOrderPage";
 import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
@@ -12,7 +12,7 @@ function App() {
   const [user, setUser] = useState(getUser());
 
   return (
-    <main className="App">
+    <main className={styles.App}>
       {user ? (
         <>
           <NavBar user={user} setUser={setUser} />
