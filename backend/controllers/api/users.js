@@ -29,13 +29,14 @@ const dataController = {
   async login(req, res, next) {
     try {
       const user = await User.findOne({ email: req.body.email });
-      if (!user) throw new Error();
+      if (!user) throw new Error("User does not exist");
       const match = await bcrypt.compare(req.body.password, user.password);
-      if (!match) throw new Error();
+      if (!match) throw new Error("Password does not match");
       res.locals.data.user = user;
       res.locals.data.token = createJWT(user);
       next();
-    } catch {
+    } catch (error) {
+      console.error(error);
       res.status(400).json("There is a problem with username or password");
     }
   },
