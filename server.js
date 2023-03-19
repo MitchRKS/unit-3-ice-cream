@@ -25,6 +25,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use((req, res, next) => {
+  console.log({ params: req.params, body: req.body });
+  next();
+});
+
 app.use(require("./backend/config/checkToken"));
 
 app.use("/api/users", require("./backend/routes/api/users"));
