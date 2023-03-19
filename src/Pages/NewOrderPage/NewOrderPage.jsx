@@ -9,7 +9,7 @@ import MenuList from "../../components/MenuList/MenuList";
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
 import UserLogOut from "../../components/UserLogOut/UserLogOut";
-import Aside from "../../components/Aside";
+import Aside from "../../components/aside";
 
 export default function NewOrderPage({ user, setUser }) {
   const [menuItems, setMenuItems] = useState([]);
