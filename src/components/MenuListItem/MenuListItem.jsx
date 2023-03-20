@@ -45,7 +45,6 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
             id="chocoChips"
             name="toppings"
             value="toppings"
-            checked
           />
           <label for="chocoChips">Choco chips</label>
         </div>
@@ -55,7 +54,6 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
             id="caramel"
             name="toppings"
             value="toppings"
-            checked
           />
           <label for="caramel">Caramel</label>
         </div>
@@ -65,7 +63,6 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
             id="heathBar"
             name="toppings"
             value="toppings"
-            checked
           />
           <label for="heathBar">Heath bar</label>
         </div>
@@ -75,9 +72,8 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
             id="Sprinkle"
             name="toppings"
             value="toppings"
-            checked
           />
-          <label for="Sprinkle">Sprinkle`</label>
+          <label for="Sprinkle">Sprinkle</label>
         </div>
         <div>
           <input
@@ -85,7 +81,6 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
             id="peanuts"
             name="toppings"
             value="toppings"
-            checked
           />
           <label for="peanuts">Peanuts</label>
         </div>
