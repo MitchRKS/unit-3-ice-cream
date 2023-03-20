@@ -4,13 +4,15 @@
 
 import { useState, useEffect, useRef } from "react";
 import * as itemsAPI from "../../utilities/items-api";
-import * as ordersAPI from "../../utilities/order-api";
+import * as ordersAPI from "../../utilities/orders-api";
 import styles from "./NewOrderPage.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import MenuList from "../../components/MenuList/MenuList";
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
 import UserLogOut from "../../components/UserLogOut/UserLogOut";
+import Aside from "../../components/Aside";
+
 import React from "react";
 
 export default function NewOrderPage({ user, setUser }) {

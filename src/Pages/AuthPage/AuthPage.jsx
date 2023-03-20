@@ -10,14 +10,22 @@ export default function AuthPage({ setUser }) {
     <main className={styles.AuthPage}>
       <div>
         <h3 onClick={() => setShowLogin(!showLogin)}>
-          {showLogin ? "LOG IN" : "SIGN UP"}
+          {showLogin
+            ? "Already a member? LOG IN"
+            : "New to our website? SIGN UP"}
         </h3>
+        {showLogin ? (
+          <LoginForm setUser={setUser} />
+          
+        ) : (
+          <SignUpForm setUser={setUser} />
+        )}
       </div>
-      {showLogin ? (
+      {/* {showLogin ? (
         <LoginForm setUser={setUser} />
       ) : (
         <SignUpForm setUser={setUser} />
-      )}
+      )} */}
     </main>
   );
 }
