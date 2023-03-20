@@ -1,8 +1,9 @@
 .MenuListItem {
   width: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   margin-bottom: 3vmin;
   padding: 2vmin;
   color: var(--text-light);
@@ -12,14 +13,14 @@
   font-size: 4vmin;
 }
 
-.MenuListItem .emoji {
-  height: 8vw;
-  width: 8vw;
-  font-size: 4vw;
-  background-color: var(--tan-1);
-  border: 0.1vmin solid var(--tan-3);
-  border-radius: 1vmin;
-}
+// .MenuListItem .emoji {
+//   height: 8vw;
+//   width: 8vw;
+//   font-size: 4vw;
+//   background-color: var(--tan-1);
+//   border: 0.1vmin solid var(--tan-3);
+//   border-radius: 1vmin;
+// }
 
 .MenuListItem .buy {
   display: flex;
@@ -28,12 +29,17 @@
 
 .MenuListItem .buy span {
   font-size: 1.7vw;
-  text-align: center;
+  text-align: right;
   color: var(--text-light);
 }
 
 .MenuListItem .name {
   font-size: 2vw;
-  text-align: center;
+  text-align: left;
   color: var(--text-light);
+}
+
+.nameAndPrice {
+  display: flex;
+  flex-flow: column;
 }
