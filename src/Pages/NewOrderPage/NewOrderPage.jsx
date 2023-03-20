@@ -11,7 +11,6 @@ import MenuList from "../../components/MenuList/MenuList";
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
 import UserLogOut from "../../components/UserLogOut/UserLogOut";
-import Aside from "../../components/Aside";
 
 import React from "react";
 
@@ -61,7 +60,7 @@ export default function NewOrderPage({ user, setUser }) {
 
   return (
     <main className={styles.NewOrderPage}>
-      <Aside>
+      <aside>
         {/* <Logo /> */}
         <CategoryList
           categories={categoriesRef.current}
@@ -72,7 +71,7 @@ export default function NewOrderPage({ user, setUser }) {
           PREVIOUS ORDERS
         </Link>
         <UserLogOut user={user} setUser={setUser} />
-      </Aside>
+      </aside>
       <MenuList
         menuItems={menuItems.filter((item) => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}

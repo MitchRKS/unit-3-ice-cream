@@ -6,7 +6,7 @@ import * as ordersAPI from "../../utilities/orders-api";
 import UserLogOut from "../../components/UserLogOut/UserLogOut";
 import OrderList from "../../components/OrderList/OrderList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
-import Aside from "../../components/Aside";
+
 
 export default function OrderHistoryPage({ user, setUser }) {
   /*--- State --- */
@@ -33,11 +33,11 @@ export default function OrderHistoryPage({ user, setUser }) {
   /*--- Rendered UI --- */
   return (
     <main className={styles.OrderHistoryPage}>
-      <Aside user={user} setUser={setUser} styles={styles.aside}>
+      <aside user={user} setUser={setUser} styles={styles.aside}>
         <Link to="/orders/new" className="button btn-sm">
           NEW ORDER
         </Link>
-      </Aside>
+      </aside>
       <OrderList
         orders={orders}
         activeOrder={activeOrder}
