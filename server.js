@@ -34,6 +34,11 @@ app.use(require("./backend/config/checkToken"));
 
 app.use("/api/users", require("./backend/routes/api/users"));
 
+const ensureLoggedIn = require("./backend/config/ensureLoggedIn");
+app.use("/api/items", ensureLoggedIn, require("./routes/api/items"));
+app.use("/api/orders", ensureLoggedIn, require("./routes/api/orders"));
+
+
 app.get("/api", (req, res) => {
   res.json({ message: "The API is alive!!!" });
 });
