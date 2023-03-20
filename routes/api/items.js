@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const itemsCtrl = require("../../controllers/api/items");
+const itemsCtrl = require("../../backend/controllers/api/items");
 
 // GET /api/items
 router.get("/", itemsCtrl.index);
