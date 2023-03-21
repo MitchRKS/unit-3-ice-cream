@@ -4,7 +4,6 @@
   --tan-2: #e7e2dd;
   --tan-3: #e2d9d1;
   --tan-4: #d3c1ae;
-  --orange: #f67f00;
   --text-light: #968c84;
   --text-dark: #615954;
 }
@@ -87,7 +86,7 @@ code {
 }
 
 p.error-message {
-  color: var(--orange);
+  color: cornflowerblue;
   text-align: center;
 }
 
@@ -115,7 +114,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color: cornflowerblue;
 }
 
 button,
@@ -123,7 +122,7 @@ a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: cornflowerblue;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
